@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="animate.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+ />
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="samsung  animate__backInLeft">
+        <div class="screen">
+            <span class="circle"></span>
+            <span class="circle blur"></span>
+            <iframe id="iframe" class="hide"></iframe>
+            <div id="lockscreen" class="">
+                <img class="lockimg" src="shield.png">
+                <img class="lockimg hide" src="shield2.png">
+                <p class="help">گذرواژه را وارد کنید</p>
+                <div id="numbers">
+                <div class="number">1</div>
+                <div class="number">2</div>
+                <div class="number">3</div>
+                <div class="number">4</div>
+                <div class="number">5</div>
+                <div class="number">6</div>
+                <div class="number">7</div>
+                <div class="number">8</div>
+                <div class="number">9</div>
+                <div class="number">0</div>
+                </div>
+                <p id="pressed"></p>
+            </div>
+          <div id="homepage" class="">
+            <img usemap="#workmap" class="background" src="screenimg.gif">
+            <a onclick="openpage('todolist')"l"><img src="app1.png" class="todolist"></a>
+            <a onclick="openpage('guessnumber')"><img src="app4.png" class="guess">
+            </a>
+            <a onclick="openpage('spy')"><img src="app3.png" class="spy"></a>
+            <map name="workmap">
+                <area style="cursor: pointer;" shape="rect" coords="220,542,270,582" onclick="openpage('webcam')">
+                <area style="cursor: pointer;" shape="rect" coords="170,542,210,582" onclick="openpage('chrome')">
+                <area style="cursor: pointer;" shape="rect" coords="70,542,110,582" onclick="openpage('messages')">
+              </map>
+          </div>
+        </div>
+    </div>
+    <div class="homescreenbtn" onclick="homescreen()">
+        <i class="fa-solid fa-house"></i>
+        Go Home
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
