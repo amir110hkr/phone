@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style/style.css?v=6" />
+      <link rel="stylesheet" href="style/animate.min.css?v=5" />
+      <title>Task List</title>
+   </head>
+   <body>
+      <h1 class="title animate__zoomIn animate__animated">تسک لیست 🛒</h1>
+      <div class="todo-list animate__zoomIn animate__animated">
+         <div class="list-head">
+            <input type="text" class="entered-list" />
+            <button class="add-list">اضافه کردن</button>
+         </div>
+         <div class="tasks">
+            <!-- <div class="item completed">
+        <p>خرید لوازم ضروری</p>
+        <div class="item-btn">
+         <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+          <i class="fa-sharp fa-solid fa-trash"></i>
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+    </div> -->
+         </div>
+      </div>
+
+      <div id="fixitem">
+         <p style="color: rgb(130, 130, 130);">Dark Mode</p>
+         <label class="switch">
+            <input id="darkmode" onclick ="darkmode()" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+      </div>
+      
+      <script src="script.js?v=6"></script>
+   </body>
+</html>
