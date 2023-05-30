@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="style.css" rel="stylesheet" />
+      <title>Document</title>
+      <script
+         type="text/javascript"
+         src="webcam-easy.min.js"
+      ></script>
+   </head>
+   <body>
+      <div id="box">
+         <img src="background.jpg" />
+         <video id="webcam" autoplay playsinline></video>
+         <canvas id="canvas" class="d-none"></canvas>
+      </div>
+      <script>
+         const webcamElement = document.getElementById("webcam");
+         const canvasElement = document.getElementById("canvas");
+         const webcam = new Webcam(webcamElement, "user", canvasElement);
+         webcam.start();
+      </script>
+   </body>
+</html>

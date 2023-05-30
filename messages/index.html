@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="style.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Document</title>
+</head>
+
+<body>
+   <div id="box">
+      <div class="" id="topnav">
+         <i class="fa-sharp fa-solid fa-bars"></i>
+         <i class="fa-solid fa-magnifying-glass"></i>
+         <p>Search images & videos</p>
+         <img src="profile.png" />
+      </div>
+      <div class="" id="messagebox">
+         <div onclick="chat('chat1')" class="message">
+            <img class="avatar" src="images/red.png" />
+            <div class="messagetext">
+               <p class="phonenumber">0999 999 9000</p>
+               <p class="text">
+                  اگر منتظر جمعه بودی واسه گرفتن 40% تخفیف اینترنت و مکالمه سامانتلی ، الان وقتشه که ...
+               </p>
+            </div>
+            <p class="time">06:18 PM</p>
+            <img class="unread" src="images/unread.png">
+         </div>
+         <div class="message">
+            <img class="avatar" src="images/green.png" />
+            <div class="messagetext">
+               <p class="phonenumber">Raavito</p>
+               <p class="text">
+                  دوست داری وقتی داری کار میکنی صدای طبیعت بهت آرامش بده؟🌄🌳😌
+                  پس دست به کار شو! 👇
+               </p>
+            </div>
+            <p class="time">&nbsp&nbsp&nbsp&nbsp
+               07:54 PM</p>
+         </div>
+         <div class="message">
+
+            <img class="avatar" src="images/blue.png" />
+            <div class="messagetext">
+               <p class="phonenumber">100070070</p>
+               <p class="text">
+                  3967: کد ورود به بامن
+                  n69VqereDRqZpSC
+               </p>
+            </div>
+            <p class="time">
+               01:54 PM</p>
+            <img class="unread" src="images/unread.png">
+         </div>
+         <div onclick="chat('chat2')" class="message">
+            <img class="avatar" src="images/alireza.png" />
+            <div class="messagetext">
+               <p class="phonenumber">مهندس فراهانی</p>
+               <p class="text">
+
+
+                  سلام خوبی امروز کودتا با خودت : You
+                  <br>
+                  بیار مرسی
+
+               </p>
+            </div>
+            <p class="time">&nbsp&nbsp&nbsp&nbsp
+               06:39 AM</p>
+         </div>
+         <div class="message">
+            <img class="avatar" src="images/purple.png" />
+            <div class="messagetext">
+               <p class="phonenumber">200035</p>
+               <p class="text">
+                  *بانک شهر*
+                  انتقال وجه کارتي
+                  برداشت از:400826991966
+               </p>
+            </div>
+            <p class="time">&nbsp&nbsp&nbsp&nbsp
+               10:13 AM</p>
+         </div>
+         <div class="message">
+            <img class="avatar" src="images/orange.png" />
+            <div class="messagetext">
+               <p class="phonenumber">50003103</p>
+               <p class="text">
+                  خرید اقساطی از دیجی‌کالا فقط با یک سفته الکترونیک!🛍️
+
+                  اعتبار دیجی‌پی رو با اعتبارسنجی رایگان بگیر 👇
+               </p>
+            </div>
+            <p class="time">&nbsp&nbsp&nbsp&nbsp
+               07:26 AM</p>
+         </div>
+         <div onclick="chat('chat3')" class="message">
+            <img class="avatar" src="images/ehsan.png" />
+            <div class="messagetext">
+               <p class="phonenumber">مهندس نجبا</p>
+               <p class="text">
+                  امیر یه دونه الان میاد سوار نشو داشتم میرسیدم بهت میزنگم یا...
+               </p>
+            </div>
+            <p class="time">&nbsp&nbsp&nbsp&nbsp
+               10:56 AM</p>
+         </div>
+         <div class="message">
+            <img class="avatar" src="images/green.png" />
+            <div class="messagetext">
+               <p class="phonenumber">735636</p>
+               <p class="text">
+                  وبینار رایگان مسیرهای شغلی علم داده و هوش مصنوعی،
+                  با بررسی 16 مسیر شغلی و نیازمندی های آن
+               </p>
+            </div>
+            <p class="time">&nbsp&nbsp&nbsp&nbsp
+               10:56 AM</p>
+         </div>
+         <div id="startchat">
+            <i class="fa-regular fa-comment"></i>
+            <p>Start chat</p>
+         </div>
+      </div>
+      <div class="hide" id="chat1">
+         <div id="topchat">
+            <i onclick="chat('chat1')" class="fa-solid fa-arrow-left"></i>
+            <img src="images/red.png">
+            <p class="phonenumberchat">0999 999 9000</p>
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+         </div>
+         <div id="chat">
+            <div class="bubblerecive">
+               <p class="bubbletxt">
+                  ماری به شکل انسان...
+                  <br>
+                  انیمیشن سرشار از عشق و ماجراجویی با نام "مار سفید" را با سیم کارت سامانتل مشاهده کنید.
+                  <br>
+                  yun.ir/digitoonWhiteSnake
+
+               </p>
+            </div>
+            <p class="recivetime">10:27 PM</p>
+            <p class="day">Sunday</p>
+            <div class="bubblerecive">
+               <p class="bubbletxt">
+                   40% تخفیف اینترنت و مکالمه سامانتلی
+                  <br>
+                  yun.ir/kmqd6
+                  <br>
+                  سامانتل اولین اپراتور نسل جدید ارتباطات همراه
+               </p>
+            </div>
+            <p class="recivetime">03:38 AM</p>
+            <div class="bubblerecive">
+               <p class="bubbletxt">
+                  عشق و هیجان را در فیلم "مادر" محصول سال 2023 با سیم کارت سامانتل و بدون پرداخت حق اشتراک
+                  مشاهده کنید.
+                  <br>
+                  yun.ir/PlanTheMother
+               </p>
+            </div>
+            <p class="recivetime">08:41 AM</p>
+         </div>
+         <div id="bottomchat">
+            <i class="fa-sharp fa-solid fa-plus"></i>
+            <i class="fa-solid fa-image"></i>
+            <div id="send">
+               <input placeholder="Text (Irancell)">
+               <i class="fa-solid fa-sim-card"></i>
+               <i class="fa-solid fa-face-smile"></i>
+               <i class="fa-solid fa-microphone"></i>
+            </div>
+         </div>
+      </div>
+      <div class="hide" id="chat2">
+         <div id="topchat">
+            <i onclick="chat('chat2')" class="fa-solid fa-arrow-left"></i>
+            <img src="images/alireza.png">
+            <p class="phonenumberchat">مهندس فراهانی</p>
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+         </div>
+         <div id="chatbubbles">
+            <div class="bubblesent">
+               <p class="bubbletxt">
+               سلام خوبی فردا دانشگاه میای ؟
+               </p>
+            </div>
+            <p class="sendtime">10:27 PM</p>
+
+            <div class="bubblerecive">
+               <p class="bubbletxt">
+               سلام آره میام
+               </p>
+            </div>
+            <p class="recivetime">10:29 PM</p>
+            <div class="bubblerecive">
+               <p class="bubbletxt">
+               راستی حتما UNO رو بیار
+               </p>
+            </div>
+            <p class="recivetime">10:29 PM</p>
+            <div class="bubblesent">
+               <p class="bubbletxt">
+               اوکی
+               </p>
+            </div>
+            <p class="sendtime">10:30 PM</p>
+            <p class="day">Wednesday</p>
+            <div class="bubblesent">
+               <p class="bubbletxt">
+               سلام خوبی امروز کودتا با خودت بیار مرسی
+               </p>
+            </div>
+            <p class="sendtime">11:52 PM</p>
+         </div>
+         <div id="bottomchat">
+            <i class="fa-sharp fa-solid fa-plus"></i>
+            <i class="fa-solid fa-image"></i>
+            <div id="send">
+               <input placeholder="Text (Irancell)">
+               <i class="fa-solid fa-sim-card"></i>
+               <i class="fa-solid fa-face-smile"></i>
+               <i class="fa-solid fa-microphone"></i>
+            </div>
+         </div>
+      </div>
+      <div class="hide" id="chat3">
+         <div id="topchat">
+            <i onclick="chat('chat3')" class="fa-solid fa-arrow-left"></i>
+            <img src="images/ehsan.png">
+            <p class="phonenumberchat">مهندس نجبا</p>
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+         </div>
+         <div id="chatbubbles">
+            <div class="bubblesent">
+               <p class="bubbletxt">
+               سلام ما مسجد هستیم بیا اینجا
+               </p>
+            </div>
+            <p class="sendtime">05:27 PM</p>
+            <p class="day">Monday</p>
+            <div class="bubblesent">
+               <p class="bubbletxt">
+              سلام تشریف بیارید کلاس دکتر محمودیه
+               </p>
+            </div>
+            <p class="sendtime">13:29 PM</p>
+            <div class="bubblerecive">
+               <p class="bubbletxt">
+              تو راهم 🏃🏻
+               </p>
+            </div>
+            <p class="recivetime">13:29 PM</p>
+            <p class="day">Thursday</p>
+            <div class="bubblerecive">
+               <p class="bubbletxt">
+             امیر یه دونه الان میاد سوار نشو داشتم میرسیدم بهت میزنگم یا پیام میدم
+               </p>
+            </div>
+            <p class="recivetime">15:29 PM</p>
+         </div>
+         <div id="bottomchat">
+            <i class="fa-sharp fa-solid fa-plus"></i>
+            <i class="fa-solid fa-image"></i>
+            <div id="send">
+               <input placeholder="Text (Irancell)">
+               <i class="fa-solid fa-sim-card"></i>
+               <i class="fa-solid fa-face-smile"></i>
+               <i class="fa-solid fa-microphone"></i>
+            </div>
+         </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+
+</html>

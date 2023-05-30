@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>جاسوس خان</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="animate.min.css" />
+      <script src="sweetalert2@11.js"></script>
+   </head>
+   <body>
+      <!-- <button onclick="createplayers()">Click</button> -->
+      <div id="window" class="animate__animated animate__fadeIn">
+         <h1 class="animate__animated animate__fadeInUp">جاسوس خان 🕵️</h1>
+         <div id="first" class="animate__zoomIn animate__animated">
+            <p class="tozihat">
+               <span style="color: #4cc9ff">در بازی جاسوس</span>
+               ،
+               <span style="color: #98ff86">شهروندان</span>
+               باید با پرسش هایی راجب مکان تعیین شده (که
+               <span style="color: #ff8686">جاسوس</span>
+               آن را نمی داند) سعی کنند متوجه شوند جاسوس چه کسی است
+            </p>
+            <p class="tozihat">
+               در مقابل ،
+               <span style="color: #ff8686">جاسوس(ها)</span>
+               می بایست در عین حال که تلاش می کنند
+               <span style="color: #98ff86">شهروندان</span>
+               از نقش آنها خبردار نشوند ، با توجه به پاسخ سوالاتی که در طول بازی
+               پرسش می شود مکان بازی را حدس بزنند
+            </p>
+            <button onclick="skip1()">مرحله بعد</button>
+         </div>
+         <div id="second" class="hide animate__animated animate__zoomIn">
+            <div class="inputgrid">
+               <input id="playermany" class="spyinp" type="number" value="3" />
+               <p class="inputtxt">چند تا بازیکن داشته باشیم ؟</p>
+            </div>
+            <div class="inputgrid">
+               <input id="spymany" class="spyinp" type="number" value="1" />
+               <p class="inputtxt">چند تا جاسوس داشته باشیم ؟</p>
+            </div>
+            <div class="inputgrid gamemode">
+               <select onchange="showhelp()" id="gamemode" name="gamemode">
+                  <option selected value="classic">کلاسیک</option>
+                  <option value="advance">پیشرفته</option>
+               </select>
+               <p class="inputtxt">با چه قانونی بازی کنیم ؟</p>
+            </div>
+            <p class="showhelp hide">
+               در حالت پیشرفته جاسوس ها یکدیگر را می شناسند !
+            </p>
+            <button class="beforebtn" onclick="back1()">مرحله قبل</button>
+            <button onclick="skip2()">مرحله بعد</button>
+         </div>
+         <div id="third" class="hide animate__animated animate__zoomIn">
+            <div id="playerarea">
+               <!-- <div>
+                  <p>اسم بازیکن</p>
+                  <input type="text">
+               </div>                 -->
+            </div>
+            <button class="beforebtn" onclick="back2()">مرحله قبل</button>
+            <button onclick="skip3()">مرحله بعد</button>
+         </div>
+         <div id="forth" class="hide animate__animated animate__zoomIn">
+            <div id="prestart">
+               <p class="ready">همه چیز آماده است 😃</p>
+               <button onclick="startgame()" class="ready">بزن بریم 🎉</button>
+               <div id="readysm">
+                  <!-- <p class="readysm"> قراره با 
+               <span style="color:#4cc9ff">6</span>
+                بازیکن و 
+                <span style="color:#4cc9ff">2</span>
+                 جاسوس در حالت 
+                 <span style="color:#4cc9ff">کلاسیک</span>
+                  بازی کنیم</p>     -->
+               </div>
+            </div>
+            <div id="playerbox">
+               <!-- <div id="playername1">امیرحسین</div> -->
+            </div>
+            <div id="timer" class="hide">
+               <button style="background-color: #6b4900;" onclick="stoptimer()">ریست</button>
+               <button style="background-color: #078f00;" onclick="starttimer()">شروع</button>
+               <div>
+                  <p id="sanie">50</p>
+                  <p style="font-size: 20px; margin-top: 5px;">ثانیه</p>
+               </div>
+            </div>
+            <br />
+            <button id="restart" class="restart hide" onclick="startgame()">بازی مجدد</button>
+            <br />
+            <button class="beforebtn" onclick="back3()">مرحله قبل</button>
+         </div>
+      </div>
+      <div id="playerbox">
+         <!-- <button>Player Number 1</button> -->
+      </div>
+      <audio id="myAudio">
+         <source src="audios/Award.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+       </audio>
+      <script src="script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,410 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol,
+ul {
+   list-style: none;
+}
+blockquote,
+q {
+   quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+   content: "";
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+@font-face {
+   font-family: customfont;
+   src: url(fonts/dana-medium.otf);
+}
+body {
+   font-family: customfont;
+   max-width: 100vw;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #4b4b4b;
+}
+#window {
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   border-radius: 15px;
+   background-color: #323232;
+   box-shadow: #212121 5px 5px 15px;
+   padding: 10px;
+   width: 50vw;
+}
+#window.roleplay {
+   width: 70vw;
+}
+h1 {
+   margin-top: 20px;
+   direction: rtl;
+   font-size: 50px;
+   font-weight: 900;
+   color: #14ffec;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.tozihat {
+   width: 65%;
+   margin: 0 auto;
+   color: rgb(237, 237, 237);
+   font-size: 18px;
+   margin-top: 10px;
+   line-height: 40px;
+   direction: rtl;
+}
+
+button {
+   font-family: customfont;
+   padding: 10px;
+   font-size: 20px;
+   margin-top: 20px;
+   margin: 10px;
+   background-color: #0d7377;
+   color: white;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   width: 10vw;
+}
+button:hover {
+   background-color: #0b5559;
+}
+.swal2-title {
+   line-height: 60px;
+   direction: rtl;
+   font-size: 25px;
+}
+.small {
+   font-size: 16px;
+   color: rebeccapurple;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   line-height: 35px;
+   display: inline-block;
+}
+.swal2-actions {
+   margin-top: 10px;
+}
+.beforebtn {
+   background-color: #7a0e0e;
+}
+.beforebtn:hover {
+   background-color: #530909;
+}
+.inputtxt {
+   color: rgb(255, 255, 255);
+   z-index: 9;
+   font-size: 18px;
+   direction: rtl;
+}
+.inputgrid {
+   display: grid;
+   align-items: center;
+   grid-template-columns: 40% 75%;
+   gap: 0px;
+   margin-bottom: 20px;
+}
+.spyinp {
+   text-align: center;
+   width: 70px;
+   height: 40px;
+   font-size: 30px;
+   background-color: #575757;
+   color: white;
+   border: 1px solid white;
+}
+.inputgrid.gamemode {
+   grid-template-columns: 40% 75%;
+   margin-bottom: 15px;
+}
+select {
+   width: 100px;
+   text-align: center;
+   height: 40px;
+   font-size: 20px;
+   background-color: #575757;
+   color: white;
+   border: 1px solid white;
+}
+.showhelp {
+   color: #fffc52;
+   direction: rtl;
+   font-size: 15px;
+   margin-top: 25px;
+   margin-bottom: 10px;
+}
+#playerarea {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+}
+#playerarea input {
+   font-family: customfont;
+   width: 120px;
+   padding: 5px;
+   font-size: 18px;
+   text-align: center;
+   border: 3px solid rgb(255, 104, 104);
+}
+#playerarea p {
+   color: white;
+   margin-bottom: 10px;
+   font-size: 21px;
+}
+#playerarea div {
+   margin: 10px;
+}
+p.ready {
+   margin-top: 25px;
+   margin-bottom: 15px;
+   direction: rtl;
+   color: #fffc52;
+   font-size: 30px;
+}
+button.ready {
+   font-size: 30px;
+   direction: rtl;
+   width: 250px;
+   background-color: #a19e00;
+}
+button.ready:hover {
+   background-color: #616000;
+}
+.readysm {
+   font-size: 25px;
+   color: rgb(255, 255, 255);
+   margin-top: 50px;
+}
+#playerbox {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+}
+#playerbox div {
+   cursor: pointer;
+   justify-content: center;
+   text-align: center;
+   background-color: #5d5d5d;
+   padding-bottom: 30px;
+   padding-top: 30px;
+   padding-left: 4px;
+   padding-right: 4px;
+   font-size: 25px;
+   margin: 15px;
+   width:fit-content;
+   min-width: 120px;
+   border: 5px #14ffec solid;
+   color: white;
+   border-radius: 10px;
+}
+.restart {
+   background-color: #d2d2d2;
+   color: black;
+}
+.restart:hover {
+   background-color: #848484;
+   color: black;
+}
+#timer {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   border: 8px solid white;
+   padding: 10px;
+   margin: 0 auto;
+   margin-top: 30px;
+   width: 35vw;
+}
+#timer p {
+   color: white;
+   font-size: 25px;
+}
+.hide {
+   display: none;
+}
+#timer.hide {
+   display: none;
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 9vw;
+    }
+    #window{
+    margin: 0px;
+    width: 80vw;
+    }
+    #window.roleplay{
+        width: 85vw;
+    }
+    .tozihat{
+        width: 90%;
+        font-size: 4.8vw;
+        line-height: 9vw;
+    }
+    button{
+        font-size: 3.5vw;
+        width: 30vw;
+    }
+    .inputtxt{
+        font-size: 3vw;
+    }
+    p.ready{
+        font-size: 6vw;
+    }
+    button.ready{
+        width: 55vw;
+    }
+    p.readysm{
+        font-size: 5vw;
+        line-height: 30px;
+    }
+    #playerbox div{
+      width:fit-content;
+      min-width: 120px;
+      padding-left: 4px;
+      padding-right: 4px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 5vw;
+    }
+    #timer{
+        width: 70vw;
+        padding: 5px;
+    }
+    #timer button{
+        width: 15vw;
+    }
+    #timer p{
+        font-size: 5vw;
+    }
+    .showhelp{
+        font-size: 3vw;
+    }
+    .swal2-title {
+      font-size: 20px !important;
+      line-height: 45px !important;
+    }
+}

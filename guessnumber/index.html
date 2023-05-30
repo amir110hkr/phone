@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="animate.min.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <title>حدس عدد</title>
+   </head>
+   <body>
+      <div class="window" id="window">
+         <h1>حدس عدد</h1>
+         <div id="first">
+            <p id="tozihat">
+               سلام 😃
+               <br />
+               توی این بازی من یک عدد بین
+               <span style="color: #ff6161">0</span>
+               تا
+               <span style="color: #ff6161">100</span>
+
+               انتخاب می کنم و تو قراره اونو حدس بزنی البته نترس چون بهت میگم
+               عددی که انتخاب کردم از عدد تو کوچکتر هست یا بزرگتر
+               <br />
+               آماده ای ؟؟؟
+            </p>
+            <button id="startgame" onclick="startgame()">شروع بازی</button>
+         </div>
+         <div id="second" class="hide">
+            <div id="hearts">
+               <i class="fas fa-heartbeat" style="color: #ff0000"></i>
+               <i class="fas fa-heartbeat" style="color: #ff0000"></i>
+               <i class="fas fa-heartbeat" style="color: #ff0000"></i>
+               <i class="fas fa-heartbeat" style="color: #ff0000"></i>
+               <i class="fas fa-heartbeat" style="color: #ff0000"></i>
+               <i class="fas fa-heartbeat" style="color: #ff0000"></i>
+               <!-- <i class="fas fa-heart-broken" style="color: #330000"></i> -->
+            </div>
+            <p class="guessp">عدد رو حدس بزن :</p>
+            <div id="grid">
+               <input value="0" min="0" max="100" id="number" type="number" />
+               <button id="guessbtn" type="button" onclick="guess()">
+                  حدس زدن
+               </button>
+            </div>
+            <div id="status">
+<!--                
+               <p class="lower">
+                  عدد تو
+                  <span style="color: red">کوچکتر</span>
+                  از عدد منه
+               </p>
+               <p class="higher">
+                  عدد تو
+                  <span style="color: red">بزرگتر</span>
+                  از عدد منه
+               </p>
+               <p class="error">
+                  باید عددی بین
+                  <span style="color: red">0</span>
+                  تا
+                  <span style="color: red">100</span>
+                  بنویسی
+               </p>
+               <p class="win">
+                  آفرین برنده شدی 😎
+               </p> 
+               <p class="lose">
+                  باختی😐
+                  <br>
+                  عدد من 
+                  <span style="color: red"></span>
+                  بود
+               </p>
+               -->
+            
+            </div>
+            <button id="restartgame" onclick="restartgame()">بازی مجدد</button>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
